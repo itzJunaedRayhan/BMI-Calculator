@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: url('../images/1374076.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: Poppins;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left{
+    width: 60%;
+    max-width: 450px;
+    min-height: 250px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+.left h2{
+    color: tomato;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 3px;
+}
+
+.form-group{
+    width: 100%;
+    display: block;
+    color: tomato;
+    padding:  10px 25px;
+}
+
+input[type="range"] {
+    width: 70%;
+    height: 3.5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #1c1c1c;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left .form-group span{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left #result{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #0be881;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left #category{
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #1c1c1c;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author{
+    width: 450px;
+    height: 300px;
+}
+
+.author img{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .wrapper{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .author{
+        display: none;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 0%;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+       
+}
